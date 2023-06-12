@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255,230,230);
+}
+
+
+.navBar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    background: linear-gradient(65deg, rgba(0,0,55, .3), rgba(0,0,85, .5));
+    box-shadow: 0px 7px 15px #000;
+    z-index: 3;
+}
+
+.navBar .logo{
+    margin-left: 3%;
+}
+.navBar img{
+    width: 120px;
+    padding: 0.5rem;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+
+.links a {
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s ease;
+
+}
+
+.links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2.4px;
+    transition: all .3s ease;
+}
+
+.servico{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(45deg, rgb(0,0,30),rgb(0,0,70));
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+}
+.sobre , .contato, .treinamentos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(90deg,rgb(0,0,15), rgb(0,0,35));
+    color: rgb(255,230,230);
+    
+}
+
+.servico-content{
+    position: relative;
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background: rgb(0, 0, 40);
+    box-shadow: -10px 20px 25px rgb(0,0,0),
+    -10px 20px 50px rgb(0,0,10),
+    -10px 20px 75px rgb(0,0,15),
+    -10px 20px 100px rgb(0,0,20);
+    border-radius: 10px;
+    color: rgb(255,230,230);
+    padding: 1.5rem;
+}
+
+.bmo-title{
+    font-size: 24px;
+}
+.servico-content p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.treinamentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.treinamentos-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+    margin-top: 5%;
+}
+
+.bmo-treinamentos{
+    font-size: 24px;
+}
+.lista-de-treinamentos{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.treinamento{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5%;
+    background: rgb(0,0,40);
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    padding: 1rem;
+    text-align: center;
+    transition: .4s ease-out;
+}
+
+.treinamento:hover{
+    transform: scale(1.009);
+    box-shadow: 0 10px 10px rgb(0,0,10),
+    0 10px 30px rgb(0,0,10),
+    0 10px 50px rgb(0,0,10);
+}
+
+.treinamento-title{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.treinamento-p{
+    font-size: 16px;
+}
+
+.treinamento-pontos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 15%;
+}
+
+.treinamento-pontos ul{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-content{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3%;
+}
+
+.bmo-sobre{
+    font-size: 24px;
+}
+
+.sobre-content p{
+    width: 100%;
+    height: 10%;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(0, 0, 40);
+    border-left: 2px solid rgb(0, 0, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.sobre-content p:hover{
+    transform: scale(1.03);
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contato-form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.nome-sobrenome{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    width: 50%;
+}
+
+.box{
+    width: 50%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.box input{
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,230,230);
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(255,230,230);
+    transition: .4s;
+}
+.box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.box input:focus ~ label,
+.box input:valid ~ label{
+    font-size: 12px;
+    top: -30px;
+    transition: .4s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submite{
+    width: 40%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    color: rgb(255,230,230);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: rgba(0,0,85, .5);
+    border-radius: 100px;
+    transition: .6s ease;
+}
+
+.submite:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .6;
+}
+
+.modal-content-ok, .modal-content-errado{
+    position: fixed;
+    top: 30%;
+    z-index: 4;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 25%;
+    height: 25%;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(0,0,45, .85);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: start;
+    gap: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.close-popup1, .close-popup2{
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    color: rgb(255,230,230);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: rgba(0,0,85, .5);
+    border-radius: 100px;
+    transition: .6s ease;
+}
+
+.close-popup1:hover, .close-popup2:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal{
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    background: rgb(0,0,45);
+    padding: 1rem;
+    z-index: 3;
+}
+
+.bmo-ctt{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infos{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 5%;
+    color: rgb(255,230,230);
+    border-radius: 20px;
+}
+
+.infos h3{
+    font-size: 24px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.contato-info, .sede-info{
+    width: 100%;
+    height: 100%;
+}
+
+.contatos, .endereco{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.icon-info{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.ctt {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255,230,230);
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-top: 2px solid rgb(0,0,25);
+}
+.textos{
+    margin-top: 5%;
+}
+.ctt p{
+    font-weight: bold;
+}
+
+.ctt strong{
+    font-size: 16px;
+}
+
+.port{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+
+}
+
+.icon-port a{
+    width: 55px;
+    height: 55px;
+    background: rgba(0,0,0, .4);
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    transition: all .2 ease;
+}
+
+.icon-port a:hover{
+    background: rgba(0,0,0, .2);
+    transform: scale(1.05);
+}
+
+
+@media (max-width:768px) {
+    body{
+        width: 555px;
+        height: 555px;
+    }
+
+    .navBar{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navBar .links{
+        display: none;
+    }
+
+    .servico{
+        height: 100vh;
+        margin-bottom: -40px;
+    }
+    section, footer{
+        width: 555px;
+        height: 755px;
+        padding: 2rem 0;
+    }
+    .servico .bmo-title{
+        display: flex;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 16px;
+    }
+
+    .servico-content{
+        background: none;
+        box-shadow: none;
+        position: relative;
+        width: 100%;
+    }
+
+    .servico-content .bmo-p{
+        padding: 2rem 0;
+        font-size: 8px;
+    }
+    .lista-de-treinamentos{
+        display: flex;
+        flex-direction: column;
+    }
+    .treinamentos{
+        padding: 2rem;
+    }
+    section .treinamento-pontos{
+        display: none;
+    }
+    section .sobre-content{
+        gap: 10%;
+    }
+
+    section .p2{
+        display: none;
+    }
+
+    section .p3 {
+        display: none;
+    }
+
+    footer .bmo-img{
+        display: none;
+    }
+    footer .infos{
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        box-shadow: none;
+    }
+    footer .sede-info{
+        display: none;
+    }
+    
+}
